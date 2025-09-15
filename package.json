@@ -2,8 +2,10 @@
   "name": "cp",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "module",
   "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn --transpile-only --clear src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

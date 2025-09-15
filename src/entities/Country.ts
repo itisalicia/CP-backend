@@ -6,21 +6,21 @@ import { Field, ObjectType } from "type-graphql";
 export class Country extends BaseEntity {
   @PrimaryGeneratedColumn()
   @Field()
-  id: number;
+  id!: number;
 
   @Column()
   @Field()
-  name: string;
+  name!: string;
 
   @Column()
   @Field()
-  code: string;
+  code!: string;
 
   @Column()
   @Field()
-  emoji: string;
+  emoji!: string;
 
   @Column()
   @Field()
-  continent: string;
+  continent!: string;
 }
